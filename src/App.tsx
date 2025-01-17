@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { JsonForms } from "@jsonforms/react";
 import { materialRenderers } from "@jsonforms/material-renderers";
 import { Button, Drawer, Space, Divider } from "antd";
-import { CloseOutlined, MenuOutlined } from "@ant-design/icons"; // Icônes Ant Design
+import { MenuOutlined } from "@ant-design/icons"; // Icônes Ant Design
 import "./App.css";
 import { forms } from "./schemas/forms"; // Vos formulaires organisés par catégories
 
