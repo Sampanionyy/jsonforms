@@ -43,7 +43,7 @@ const App: React.FC = () => {
                 <h1>Formulaires</h1>
                 <Button type="primary" className="open-button" onClick={() => setOpen(true)}>
                     <MenuOutlined /> 
-                    <span>Ouvrir</span>
+                    <span>Menu</span>
                 </Button>
             </div>
 
