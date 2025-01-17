@@ -1,0 +1,209 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Ajoutez ces styles à votre fichier App.css */
+/* Ajoutez ces styles à votre fichier App.css */
+/* Général */
+body {
+  background-color: #f8f0f8; /* Fond rose pâle */
+  color: #c2185b; /* Texte rose foncé */
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #c2185b;
+  margin-bottom: 30px;
+}
+
+/* Boutons */
+button {
+  background-color: #c2185b; /* Bouton rose foncé */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 200px; /* Largeur uniforme */
+  height: 50px; /* Hauteur uniforme */
+  display: block; /* Pour garantir que tous les boutons occupent la même largeur */
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #d81b60; /* Hover bouton rose vif */
+}
+
+/* Drawer */
+.ant-drawer {
+  background-color: #f8f0f8;
+}
+
+.ant-drawer-header {
+  background-color: #f8f0f8;
+  border-bottom: 1px solid #d81b60;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ant-drawer-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #c2185b;
+  cursor: pointer;
+}
+
+.ant-divider-horizontal {
+  border-top: 2px solid #d81b60; /* Divider rose foncé */
+}
+
+/* Espace entre éléments */
+.ant-space {
+  margin-bottom: 20px;
+}
+
+.ant-btn {
+  margin-bottom: 10px;
+}
+
+/* Alignement des catégories et sous-catégories vers la droite */
+.ant-space-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Aligner les éléments à droite */
+}
+
+/* Conteneur du formulaire */
+.categorization-renderer {
+  padding: 20px;
+}
+
+/* Icône d'ouverture */
+.open-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.open-button i {
+  margin-right: 8px; /* Espacement entre l'icône et le texte */
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .App {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  .ant-drawer {
+      width: 100%;
+  }
+
+  .ant-divider-horizontal {
+      font-size: 1rem;
+  }
+
+  button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+
+  .categorization-renderer {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+      padding: 5px;
+  }
+
+  h1 {
+      font-size: 1.2rem;
+  }
+
+  button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+  }
+
+  .categorization-renderer {
+      padding: 10px;
+  }
+}
+
+.ant-space-item {
+  width: 100%;
+  text-align: -webkit-center;
+}
+.ant-divider-inner-text {
+  font-size: x-large;
+}
+.ant-btn ant-btn-primary open-button {
+  align-self: center;
+}
+.open-button {
+  align-self: center;
+  display: flex;
+  gap: 1rem;
+}
+.form-open {
+  display: flex;
+  flex-direction: column;
+}
+#root {
+  width: 100%;
+  margin-top: -10rem;
+}
