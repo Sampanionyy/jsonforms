@@ -25,12 +25,12 @@ const CategorizationRenderer = ({ schema, uischema, data, renderers, onChange }:
 };
 
 const App: React.FC = () => {
-    const [open, setOpen] = useState(false); 
+    const [open, setOpen] = useState(false);
     const [selectedForm, setSelectedForm] = useState<{ categoryIndex: number; formIndex: number }>({ categoryIndex: 0, formIndex: 0 });
 
     const handleDrawerChange = (categoryIndex: number, formIndex: number) => {
         setSelectedForm({ categoryIndex, formIndex });
-        setOpen(false); 
+        setOpen(false); // Fermer le menu après sélection
     };
 
     const onCloseDrawer = () => {
@@ -42,7 +42,7 @@ const App: React.FC = () => {
             <div className="form-open">
                 <h1>Formulaires</h1>
                 <Button type="primary" className="open-button" onClick={() => setOpen(true)}>
-                    <MenuOutlined /> 
+                    <MenuOutlined />
                     <span>Menu</span>
                 </Button>
             </div>
@@ -52,6 +52,7 @@ const App: React.FC = () => {
                 placement="right"
                 onClose={onCloseDrawer}
                 open={open}
+                destroyOnClose 
             >
                 <Space direction="vertical" style={{ width: "100%" }}>
                     {forms.map((category, categoryIndex) => (
@@ -77,7 +78,7 @@ const App: React.FC = () => {
                 uischema={{ type: "VerticalLayout", elements: [forms[selectedForm.categoryIndex].subcategories[selectedForm.formIndex].uischema] }}
                 data={forms[selectedForm.categoryIndex].subcategories[selectedForm.formIndex].data}
                 renderers={materialRenderers}
-                onChange={({ data }: any) => console.log("Data changed:", data)}
+                onChange={({ data }: any) => console.log("Données modifiées :", data)}
             />
         </div>
     );

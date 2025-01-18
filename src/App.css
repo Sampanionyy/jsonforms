@@ -207,3 +207,6 @@ button:hover {
   width: 100%;
   /* margin-top: -10rem; */
 }
+.ant-wave {
+  display: none !important;
+}
